@@ -116,7 +116,7 @@ keras.layers.convolutional.SeparableConv2D(filters, kernel_size, strides=(1, 1),
 
 可分离卷积首先按深度方向进行卷积（对每个输入通道分别卷积），然后逐点进行卷积，将上一步的卷积结果混合到输出通道中。参数```depth_multiplier```控制了在depthwise卷积（第一步）的过程中，每个输入通道信号产生多少个输出通道。
 
-直观来说，可分离卷积可以看做讲一个卷积核分解为两个小的卷积核，或看作Inception模块的一种极端情况。
+直观来说，可分离卷积可以看做将一个卷积核分解为两个小的卷积核，或看作Inception模块的一种极端情况。
 
 当使用该层作为第一层时，应提供```input_shape```参数。例如```input_shape = (3,128,128)```代表128*128的彩色RGB图像
 
