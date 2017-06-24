@@ -69,7 +69,7 @@ Add层的函数式包装
 输入列表张量之和
 
 ## multiply
-``python
+```python
 multiply(inputs)
 ```
 Multiply的函数包装
